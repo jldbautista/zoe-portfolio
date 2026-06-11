@@ -12,7 +12,7 @@ export default function Hero() {
       className="relative grid items-center gap-8 px-6 py-7 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:px-14 lg:py-9"
     >
       <div className="relative z-10 max-w-2xl">
-        <h1 className="font-mono text-5xl font-semibold uppercase leading-[1.08] tracking-[0.22em] text-[var(--color-blue)] sm:text-6xl lg:text-[3.5rem]">
+        <h1 className="font-mono text-5xl font-semibold uppercase leading-[1.08] tracking-[0.22em] text-[#004b85] sm:text-6xl lg:text-[3.5rem]">
           Zoe Bremer
         </h1>
         <p className="mt-4 font-mono text-base font-semibold uppercase tracking-[0.18em] text-[var(--color-text)] sm:text-lg">
@@ -34,9 +34,11 @@ export default function Hero() {
             <a
               key={link.href}
               href={link.href}
-              className="flex w-fit items-center gap-3 rounded-md font-mono text-sm text-[var(--color-text)] transition hover:text-[var(--color-blue)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-blue)]"
+              target={link.href.startsWith("http") ? "_blank" : undefined}
+              rel={link.href.startsWith("http") ? "noreferrer" : undefined}
+              className="group flex w-fit items-center gap-3 rounded-md px-2 py-1 font-mono text-sm text-[var(--color-text)] transition hover:bg-[#ddb307] hover:text-white focus-visible:bg-[#004b85] focus-visible:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#004b85]"
             >
-              <Icon name={link.icon} className="h-5 w-5 shrink-0 text-[var(--color-blue)]" />
+              <Icon name={link.icon} className="h-5 w-5 shrink-0 text-[#ddb307] transition group-hover:text-white group-focus-visible:text-white" />
               {link.label}
             </a>
           ))}
@@ -44,7 +46,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="relative z-10 grid gap-6 border-t border-[var(--color-border-light)] pt-7 lg:grid-cols-[128px_1fr] lg:border-l lg:border-t-0 lg:pl-9 lg:pt-0">
-        <div className="relative h-28 w-28 overflow-hidden rounded-full border border-[var(--color-border)] bg-[var(--color-site-bg)] sm:h-32 sm:w-32">
+        <div className="profile-spin relative h-28 w-28 overflow-hidden rounded-full border border-[var(--color-border)] bg-[var(--color-site-bg)] sm:h-32 sm:w-32">
           <Image
             src="/flask-kitty.png"
             alt="Flask kitty profile illustration"

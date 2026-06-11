@@ -30,7 +30,6 @@ export const skills: string[] = [
 export const focusAreas: string[] = [
   "Sustainable Process Design",
   "Separation Processes",
-  "Heat and Mass Transfer",
   "Reaction Engineering",
   "Process Optimization",
   "Environmental Engineering",
@@ -45,7 +44,7 @@ export const experiences: Experience[] = [
     title: "Process Engineering Intern",
     organization: "JOSEPH'S COMPANY",
     date: "Summer 2026",
-    description: "ABOUT TO",
+    description: "Conducted process simulations and optimization studies to improve efficiency and reduce costs in chemical manufacturing operations.",
   },
   {
     title: "Mathematics and Physics Tutor",

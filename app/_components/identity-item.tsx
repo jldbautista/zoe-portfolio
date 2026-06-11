@@ -12,7 +12,7 @@ export default function IdentityItem({
 }) {
   return (
     <div className="grid grid-cols-[28px_1fr] items-start gap-3">
-      <span className="grid h-7 w-7 place-items-center text-[var(--color-green)]">
+      <span className="grid h-7 w-7 place-items-center text-[#ddb307]">
         <Icon name={icon} className="h-5 w-5" />
       </span>
       <div>

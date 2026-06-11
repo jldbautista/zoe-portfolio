@@ -11,7 +11,7 @@ export default function SkillsSection() {
           {skills.map((skill) => (
             <div
               key={skill}
-              className="rounded-lg border border-[var(--color-border-light)] px-3 py-2 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.06em] text-[var(--color-text)] transition-colors duration-200 hover:border-[#ddb307] hover:bg-[#ddb307] hover:text-[var(--color-text)]"
+              className="rounded-lg border border-[var(--color-border-light)] px-3 py-2 text-center font-mono text-xs font-semibold uppercase tracking-[0.06em] text-[var(--color-text)] transition-colors duration-200 hover:border-[#ddb307] hover:bg-[#ddb307] hover:text-[var(--color-text)]"
             >
               {skill}
             </div>
@@ -24,7 +24,7 @@ export default function SkillsSection() {
           {focusAreas.map((area) => (
             <div
               key={area}
-              className="rounded-lg border border-[var(--color-border-light)] px-3 py-2 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.06em] text-[var(--color-text)] transition-colors duration-200 hover:border-[#ddb307] hover:bg-[#ddb307] hover:text-[var(--color-text)]"
+              className="rounded-lg border border-[var(--color-border-light)] px-3 py-2 text-center font-mono text-xs font-semibold uppercase tracking-[0.06em] text-[var(--color-text)] transition-colors duration-200 hover:border-[#ddb307] hover:bg-[#ddb307] hover:text-[var(--color-text)]"
             >
               {area}
             </div>

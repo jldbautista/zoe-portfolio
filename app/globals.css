@@ -34,3 +34,19 @@ body {
 ::selection {
   background: rgba(216, 166, 0, 0.28);
 }
+
+.profile-spin {
+  animation: profile-spin 8s linear infinite;
+}
+
+@keyframes profile-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile-spin {
+    animation: none;
+  }
+}
